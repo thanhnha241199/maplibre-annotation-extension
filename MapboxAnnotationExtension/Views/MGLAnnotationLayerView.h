@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-@import MapLibre;
+@import Mapbox;
 @class MGLAnnotationController;
 
 NS_ASSUME_NONNULL_BEGIN
