@@ -3,7 +3,7 @@ platform :ios, '9.0'
 def shared_pods
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'Maplibre-iOS-SDK', '~> 5.10.0'
+  pod 'MapLibre', :git => 'https://github.com/matteocrippa/maplibre-cocoapods.git'
 end
 
 target 'MapboxAnnotationExtension' do

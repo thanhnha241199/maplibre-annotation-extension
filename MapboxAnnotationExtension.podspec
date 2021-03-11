@@ -32,6 +32,6 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.module_name = "MaplibreAnnotationExtension"
-  s.dependency "Maplibre-iOS-SDK", "~> 5.10.0"
+  s.dependency "MapLibre", "~> 5.10.0"
 
 end
