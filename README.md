@@ -1,4 +1,6 @@
-# Mapbox Annotation Extension for iOS
+# This project is a fork of [MapboxAnnotationExtension](https://github.com/mapbox/mapbox-annotation-extension), aiming to make it work with [Maplibre's iOS SDK](https://github.com/maplibre/maplibre-gl-native). The migration to use the Maplibre SDK isn't completed, yet. Therefore this Extension currently should't be used!
+
+# Maplibre Annotation Extension for iOS
 
 ---
 
@@ -6,42 +8,27 @@
 
 ---
 
-The Mapbox Annotation Extension is a lightweight library you can use with the Mapbox Maps SDK for iOS to quickly add basic shapes, icons, and other annotations to a map.
+The Maplibre Annotation Extension is a lightweight library you can use with the Maplibre Maps SDK for iOS to quickly add basic shapes, icons, and other annotations to a map.
 
 This extension leverages the power of runtime styling with an object oriented approach to simplify the creation and styling of annotations.
 
-## Installation
-
-Before following any of the below installation instructions, you will need to configure your machine to download Mapbox Maps SDK for iOS, which is a dependency of this project. Go to your Mapbox account dashboard and create an access token that has the `DOWNLOADS:READ` scope. 
-
-PLEASE NOTE: This is not the same as your production Mapbox API token. Make sure to keep it private and do not insert it into any `Info.plist file`. 
-
-Then, create a file named `.netrc` in your home directory if it doesn’t already exist, then add the following lines to the end of the file:
-
-```
-machine api.mapbox.com 
-  login mapbox
-  password PRIVATE_MAPBOX_API_TOKEN
-```
-
-where _PRIVATE_MAPBOX_API_TOKEN_ is your Mapbox API token with the `DOWNLOADS:READ` scope. You can now continue the installation process with CocoaPods or manually.
 
 ### Using CocoaPods
-To install the Mapbox Annotation Extension using CocoaPods:
+To install the Maplibre Annotation Extension using CocoaPods:
 
 Create a Podfile with the following specification:
 
 ```
-pod 'MapboxAnnotationExtension', '0.0.1-beta.2'
+pod 'MaplibreAnnotationExtension', '0.0.1-beta.2'
 ```
 
 Run `pod repo update && pod install` and open the resulting Xcode workspace.
 
 ### Manual Installation
 
-Download and unzip the latest [release](https://github.com/mapbox/mapbox-annotation-extension/releases).
+Download and unzip the latest [release](https://github.com/m0nac0/maplibre-annotation-extension/releases).
 
-Drag **MapboxAnnotationExtension.framework** into your project's Embedded Binaries section in the project editor. In the sheet that appears, make sure "Copy items if needed" is checked, then select Finish.
+Drag **MaplibreAnnotationExtension.framework** into your project's Embedded Binaries section in the project editor. In the sheet that appears, make sure "Copy items if needed" is checked, then select Finish.
 
 
 ### Carthage & Swift Package Manager
@@ -54,9 +41,9 @@ You can find a sample application within this project by running the `annotation
 
 ## Usage
 
-The Mapbox Annotation Extension supports the addition of circles, lines, polygons, and symbols. Each shape type has its own corresponding controller which manages the addition of multiple shape objects of the same type.
+The Maplibre Annotation Extension supports the addition of circles, lines, polygons, and symbols. Each shape type has its own corresponding controller which manages the addition of multiple shape objects of the same type.
 
-Since the map needs to be finished loading before adding shapes to it, all shapes should be added within the [`MGLMapView:didFinishLoadingStyle:`](https://docs.mapbox.com/ios/api/maps/) delegate method.
+Since the map needs to be finished loading before adding shapes to it, all shapes should be added within the `MGLMapView:didFinishLoadingStyle:`delegate method.
 
 ### Circles (`MGLCircleStyleAnnotation`)
 _Circles represent a coordinate point on a map with an associated radius, measured in pixels._
@@ -292,8 +279,7 @@ _Icon image & symbol text_
 
 Please note that this is an experimental project and is subject to change.
 
-If you have questions or feedback, please open a [new issue](https://github.com/mapbox/map-extensions-ios/issues/new) in this repository.
+If you have questions or feedback, please open a [new issue](https://github.com/m0nac0/maplibre-annotation-extension/issues/new) in this repository.
 
 If you'd like to report a bug, please include as much information as possible so that we can quickly reproduce the issue.
 
-For help with using the Mapbox Maps SDK for iOS, check out our [documentation](https://docs.mapbox.com/ios/).

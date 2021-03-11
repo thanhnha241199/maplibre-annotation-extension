@@ -1,6 +1,6 @@
-# Contributing to the Mapbox Annotations Extension
+# Contributing to the Maplibre Annotations Extension
 
-This document explains how to build the Mapbox Annotations Extension from source. It is intended for advanced developers who wish to contribute to the development of this project.
+This document explains how to build the Maplibre Annotations Extension from source. It is intended for advanced developers who wish to contribute to the development of this project.
 
 ## Building the framework extension
 
