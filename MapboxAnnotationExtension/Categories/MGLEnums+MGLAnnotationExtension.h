@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-@import Mapbox;
+@import MapLibre;
 
 NS_ASSUME_NONNULL_BEGIN
 
