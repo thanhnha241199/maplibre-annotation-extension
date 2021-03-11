@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
    # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.authors      = { 'm0nac0' => 'github.com/m0nac0' }
+  s.homepage     = "https://github.com/m0nac0/maplibre-annotation-extension"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
