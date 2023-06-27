@@ -14,8 +14,8 @@ Pod::Spec.new do |s|
 
    # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.authors      = { 'm0nac0' => 'github.com/m0nac0' }
-  s.homepage     = "https://github.com/m0nac0/maplibre-annotation-extension"
+  s.authors      = { 'ManoyloK' => 'github.com/ManoyloK' }
+  s.homepage     = "https://github.com/ManoyloK/maplibre-annotation-extension"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source       = { :git => "https://github.com/m0nac0/maplibre-annotation-extension.git" }
+  s.source       = { :git => "https://github.com/ManoyloK/maplibre-annotation-extension.git" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.module_name = "MapLibreAnnotationExtension"
-  s.dependency "MapLibre", "~> 5.12.0"
+  s.dependency "MapLibre", "~> 5.13.0"
 
   s.ios.deployment_target = '9.0'
 

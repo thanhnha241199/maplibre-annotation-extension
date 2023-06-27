@@ -1,20 +1,21 @@
 PODS:
-  - Mapbox-iOS-SDK (6.0.0):
-    - MapboxMobileEvents (= 0.10.2)
-  - MapboxMobileEvents (0.10.2)
+  - MapLibre (5.13.0)
 
 DEPENDENCIES:
-  - Mapbox-iOS-SDK (~> 6.0.0)
+  - MapLibre (from `https://github.com/ManoyloK/maplibre-cocoapods.git`)
 
-SPEC REPOS:
-  trunk:
-    - Mapbox-iOS-SDK
-    - MapboxMobileEvents
+EXTERNAL SOURCES:
+  MapLibre:
+    :git: https://github.com/ManoyloK/maplibre-cocoapods.git
+
+CHECKOUT OPTIONS:
+  MapLibre:
+    :commit: 52557ae9f356c6d45d12a5c1ebb6eb0ba23e809f
+    :git: https://github.com/ManoyloK/maplibre-cocoapods.git
 
 SPEC CHECKSUMS:
-  Mapbox-iOS-SDK: 48ff7550bd459b8494da8ef4d660a668e9187ef0
-  MapboxMobileEvents: 2bc0ca2eedb627b73cf403258dce2b2fa98074a6
+  MapLibre: 54a1a6b9508c2ee714de5373402fa3becc72d4e3
 
-PODFILE CHECKSUM: 2452d9231354edfceb207075b30b7a621ab485d1
+PODFILE CHECKSUM: 25a1be27e89d4353dcdb42687d6f7675793efd38
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.12.1
